@@ -1,0 +1,181 @@
+/* COLORS */
+/* FONTS */
+body {
+  background-image: url(..//img/austin-original.jpg);
+  background-repeat: no-repeat; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important; }
+
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu", sans-serif; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  margin: 0 auto; }
+
+.clear {
+  clear: both; }
+
+.inline-block {
+  display: inline-block; }
+
+.box {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #6699FF; }
+
+h3 {
+  font-size: 1.3em;
+  color: #333333;
+  margin: 10px 0 20px 0; }
+
+/* CONTENT */
+.content {
+  height: auto;
+  width: 100%;
+  padding: 0 15%;
+  background: rgba(255, 255, 255, 0.9); }
+
+.project-box {
+  height: 400px;
+  width: 20%;
+  margin: 0 0 4% 4%;
+  background: white;
+  cursor: pointer; }
+  .project-box:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.75); }
+  .project-box h1 {
+    font-size: 1.2em;
+    margin-top: 0; }
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .thumbnail img {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease; }
+    .thumbnail img:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+
+.info-box {
+  padding: 5%; }
+
+header {
+  background: #333333;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px; }
+  header a img {
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    width: auto; }
+
+/* NAV STYLES */
+nav {
+  height: auto;
+  width: 100%;
+  postion: relative; }
+  nav ul {
+    list-style: none;
+    overflow: hidden; }
+    nav ul li a {
+      display: block;
+      color: #333333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none; }
+      nav ul li a:hover {
+        background: #6699FF;
+        color: white; }
+      nav ul li a:active {
+        background: #999999; }
+
+#home-nav {
+  background: #6699FF;
+  color: white;
+  padding: 0px 4px;
+  font-size: 40px; }
+
+/* SECTION ID'S */
+#section-nav {
+  background: #CCCCCC; }
+
+#section-landing {
+  background: #999999; }
+
+/* FOOTER STYLES */
+footer {
+  height: 50px;
+  width: 100%;
+  background: #333333;
+  position: fixed;
+  bottom: 0;
+  padding: 0 20px;
+  color: #CCCCCC;
+  line-height: 50px; }
+  footer a {
+    display: block;
+    color: white;
+    text-decoration: none; }
+    footer a:hover {
+      background: #6699FF;
+      color: white; }
+    footer a:active {
+      background: #999999; }
+
+#footer {
+  background: #333333; }
+
+.social-box {
+  height: 40px;
+  width: 40px;
+  font-size: 1.5em;
+  float: right;
+  background: #999999;
+  text-align: center;
+  line-height: 40px;
+  margin: 5px 0 5px 5px; }
+  .social-box:hover {
+    background: blue; }
+
+/* SOCIAL ICON HOVER COLORS */
+#facebookBox:hover {
+  background: #3765A3; }
+
+#twitterBox:hover {
+  background: #5EA9DD; }
+
+#googlePlusBox:hover {
+  background: #DC4A38; }
+
+#linkedInBox:hover {
+  background: #0077B5; }
+
+/*# sourceMappingURL=style.min.css.map */

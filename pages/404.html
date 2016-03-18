@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org">
+<head>
+    <title>Cody Ward | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+    
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <!-- STYLES -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <!-- SCRIPTS -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="app2.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <header class="box" ng-controller="headerController">
+        <a href="#"><img src="{{ header }}" /></a>
+    </header><!-- HEADER END -->
+    <nav ng-controller="navController" id="section-nav" class="box content">
+        <ul>
+            <li ng-repeat="x in nav"><a id="{{ x.id }}" class="{{ x.class }}" href="{{ x.link }}"><i class="fa {{ x.fa }} fa-fw"></i>{{ x.label }}</a></li>
+        </ul>
+    </nav><!-- NAV END -->
+    <section id="section-landing" class="box center content">
+        <p class="clear inline-block" >Test</p>
+        <p class="right">Right</p>
+    </section>
+    <footer ng-controller="footerController" class="box">
+        <span id="social">
+            <a ng-repeat="x in footer | orderBy:'id':true" href="{{ x.url }}"><i id="{{ x.id }}" class="fa {{ x.fa }} {{ x.class }}"></i></a>
+        </span>
+        <p>Designed By: Cody Ward</p>
+    </footer><!-- FOOTER ENDS -->
+</body>
+</html>
